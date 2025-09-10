@@ -1,0 +1,37 @@
+.contato{
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:0 2px 8px black;
+}
+
+form{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,textarea{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid rgb(120, 120, 120);
+}
+
+textarea{
+    height: 100px;
+}
+
+button{
+    background-color: aqua
+    color  aliceblue
+    border : nome;
+    font-weight : bold;
+    cursor :pointer;
+    border-radius : Spx;
+    padding: 12px;
+
+}
