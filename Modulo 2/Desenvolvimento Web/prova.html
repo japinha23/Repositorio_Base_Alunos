@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameZone - Portal de Jogos</title>
+  <link rel="stylesheet" href="prova.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">GameZone</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#jogos">Jogos</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h2>O mundo dos games em um só lugar!</h2>
+      <p>Descubra os melhores jogos de ação, corrida, estratégia e muito mais.</p>
+      <a href="#jogos" class="btn-primary">Ver Jogos</a>
+    </div>
+  </section>
+
+  <!-- Seção Jogos -->
+  <section id="jogos" class="jogos container">
+    <h2>Nossos Jogos</h2>
+    <div class="jogos-grid">
+      <article class="jogo-card">
+        <img src="" alt="Jogo de Ação">
+        <h3>Jogo de Ação</h3>
+        <p>Lute contra inimigos em batalhas eletrizantes.</p>
+      </article>
+
+      <article class="jogo-card">
+        <img src="C:\Users\Aluno_Programador2\Desktop\crisssss\png-transparent-race-car-games-for-kids-free-racing-video-game-android-cool-cars-game-driving-racing-thumbnail.png" alt="Jogo de Corrida">
+        <h3>Jogo de Corrida</h3>
+        <p>Acelere em pistas desafiadoras e seja o campeão.</p>
+      </article>
+
+      <article class="jogo-card">
+        <img src="" alt="Jogo de Estratégia">
+        <h3>Jogo de Estratégia</h3>
+        <p>Planeje cada movimento e conquiste territórios.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Seção Categorias -->
+  <section id="categorias" class="categorias container">
+    <h2>Categorias</h2>
+    <ul class="categorias-lista">
+      <li>Ação</li>
+      <li>Corrida</li>
+      <li>Estratégia</li>
+      <li>RPG</li>
+      <li>Esporte</li>
+    </ul>
+  </section>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> GameZone - Todos os direitos reservados.</p>
+      <p>Redes: 
+        <a href="#">Instagram</a> | 
+        <a href="#">YouTube</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Ano automático no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

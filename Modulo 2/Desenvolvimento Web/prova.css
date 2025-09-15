@@ -1,0 +1,95 @@
+:root{
+  --accent: #004AAD;
+  --accent-light: #1E5DD9;
+  --dark: #0F1723;
+  --muted: #6B7280;
+  --bg: #ffffff;
+  --card-bg: #F5F5F5;
+  --radius: 10px;
+  --container: 1100px;
+  font-family: Arial, sans-serif;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ background:var(--bg); color:var(--dark); line-height:1.5; }
+
+.container{ width:90%; max-width:var(--container); margin:0 auto; }
+
+/* Header */
+.site-header{
+  position:fixed;
+  top:0; left:0; right:0;
+  background:#fff;
+  border-bottom:1px solid #ddd;
+  z-index:1000;
+}
+.header-inner{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 0;
+}
+.logo{ color:var(--accent); font-size:1.5rem; }
+.nav ul{ list-style:none; display:flex; gap:1rem; }
+.nav a{ text-decoration:none; color:var(--dark); font-weight:bold; }
+
+/* Hero */
+.hero{
+  background: linear-gradient(180deg, var(--accent-light) 0%, #fff 100%);
+  color:var(--dark);
+  padding-top:120px;
+  padding-bottom:80px;
+  text-align:center;
+}
+.hero h2{ font-size:2rem; margin-bottom:0.5rem; }
+.hero p{ color:var(--muted); margin-bottom:1rem; }
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  padding:0.6rem 1.2rem;
+  border-radius:var(--radius);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* Jogos */
+.jogos{ padding:3rem 0; text-align:center; }
+.jogos-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+.jogo-card{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  padding:1rem;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.jogo-card img{ width:100%; border-radius:var(--radius); }
+.jogo-card h3{ margin:0.5rem 0; }
+
+/* Categorias */
+.categorias{ padding:3rem 0; text-align:center; }
+.categorias-lista{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1rem;
+  margin-top:1rem;
+}
+.categorias-lista li{
+  background:var(--accent);
+  color:#fff;
+  padding:0.5rem 1rem;
+  border-radius:var(--radius);
+}
+
+/* Rodapé */
+.site-footer{
+  background:var(--accent);
+  color:#fff;
+  text-align:center;
+  padding:1.5rem 0;
+  margin-top:2rem;
+}
+.site-footer a{ color:#fff; text-decoration:none; font-weight:bold; }
